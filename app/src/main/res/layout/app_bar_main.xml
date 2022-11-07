@@ -23,32 +23,64 @@
 
     <include layout="@layout/content_main" />
 
-    <com.github.clans.fab.FloatingActionButton
+    <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_baseline_contact_support_24"
-        app:fab_colorNormal="#DA4336"
-        app:fab_colorPressed="#E75043"
-        app:fab_colorRipple="#99FFFFFF"
-        app:fab_showShadow="false"
+        android:src="@drawable/biggeruser"
+        app:fab_colorNormal="#FDA085"
+        app:fab_colorPressed="#F6D365"
+        app:fab_colorRipple="@color/black"
+        app:fab_showShadow="true"
         app:fab_shadowColor="#66000000"
-        app:fab_shadowRadius="4dp"
+        app:fab_shadowRadius="10dp"
         app:fab_shadowXOffset="1dp"
         app:fab_shadowYOffset="3dp"
         app:fab_size="normal"
         app:fab_showAnimation="@anim/fab_scale_up"
         app:fab_hideAnimation="@anim/fab_scale_down"
-        app:fab_label=""
+        app:fab_label="Supporter"
         app:fab_progress_color="#FF009688"
         app:fab_progress_backgroundColor="#4D000000"
         app:fab_progress_indeterminate="false"
         app:fab_progress_max="100"
         app:fab_progress="0"
-        app:fab_progress_showBackground="true"/>
+        app:fab_progress_showBackground="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_phone"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_baseline_phone_24"
+            app:fab_label="Phone"
+            app:fab_size="mini"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_messager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messager"
+            app:fab_label="Messager"
+            app:fab_size="mini"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gmail"
+            app:fab_label="Gmail"
+            app:fab_size="mini"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

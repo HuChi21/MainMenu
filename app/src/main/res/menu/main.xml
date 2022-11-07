@@ -13,14 +13,6 @@
         android:orderInCategory="100"
         android:title="Logout &amp; Exit"
         app:showAsAction="never">
-        <menu>
-            <item android:id="@+id/menuLogout"
-                android:orderInCategory="100"
-                android:title="Logout"/>
 
-            <item android:id="@+id/menuExit2"
-                android:orderInCategory="100"
-                android:title="Exit"/>
-        </menu>
     </item>
 </menu>
