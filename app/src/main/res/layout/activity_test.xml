@@ -14,11 +14,13 @@
         android:textSize="20sp"
         android:text="@string/back"
         />
-    <Button
+    <com.google.android.material.button.MaterialButton
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnBack"
-        android:layout_margin="160dp"
+        android:layout_margin="140dp"
         android:text="Back"
 
         />

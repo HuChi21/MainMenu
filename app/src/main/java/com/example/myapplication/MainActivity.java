@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,8 +39,14 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                /*String mail="chinhsg12@gmail.com";
+                Intent intent = new Intent(Intent.ACTION_SENDTO,Uri.fromParts("mailto",mail,null)); // only email apps should handle this
+
+                    startActivity(intent);
+
+                String tel="0981575389";
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", tel,null));
+                startActivity(intent);*/
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -121,7 +128,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
 
 }
