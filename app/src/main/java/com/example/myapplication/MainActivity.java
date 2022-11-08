@@ -139,6 +139,12 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         System.exit(0);
                     }
+                }).setNeutralButton("Cancel", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        alertDialog.cancel();
+                    
+                    }
                 });
                 AlertDialog alertDialog = builder.create();
                 alertDialog.setTitle("Logout & Exit");
